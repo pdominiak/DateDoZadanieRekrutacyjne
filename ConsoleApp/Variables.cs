@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp
+﻿namespace ConsoleApp
 {
     public class Variables
     {
         public static string DataBaseString {get; private set;} = "DATABASE";
+        public static string CsvFileName {get; private set;} = "data.csv";
     }
 }

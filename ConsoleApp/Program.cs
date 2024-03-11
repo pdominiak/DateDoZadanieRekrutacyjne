@@ -4,8 +4,7 @@
     {    
         static void Main(string[] args)
         {
-            string FileName = "data.csv";
-            DataReader.ImportAndPrintData(FileName);
+            DataReader.ImportAndPrintData(Variables.CsvFileName);
         }
     }
 }

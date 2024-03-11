@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using ConsoleApp.Models;
 
-
 namespace ConsoleApp
 {
     public static class DataReader
@@ -73,14 +72,9 @@ namespace ConsoleApp
                                 Console.WriteLine($"\t\tColumn '{column.Name}' with {column.DataType} data type {(column.IsNullable ? "accepts nulls" : "with no nulls")}");
                             }
                         }
-
                     }
                 }
             }
         }
-
     }
-
-
-
 }
