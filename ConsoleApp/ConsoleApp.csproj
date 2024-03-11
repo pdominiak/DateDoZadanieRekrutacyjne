@@ -44,8 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataReader.cs" />
+    <Compile Include="Models\ImportedObject.cs" />
+    <Compile Include="Models\ImportedObjectBaseClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Variables.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

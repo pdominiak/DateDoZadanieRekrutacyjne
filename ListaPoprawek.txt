@@ -1,0 +1,30 @@
+Uwagi do "kolegi" z treści zadania, w pierwszej kolejnosci błędy stylistyczne:
+1. Brak podziału kodu na różne pliki, poza małymi wyjątkami chcemy mieć jedną klasę per plik.
+2. If(warunek1){If(Warunek2)} jest złą praktyką, można użyć koniunkcji.
+3. Stosowanie na przemian pętli for oraz foreach, jest to zła praktyka.
+4. Zazwyczaj nie robi się tak długi funkcji jak "ImportAndPrintData", powinno się ją delikatnie rozbic.
+5. Zalecana jest pewna "stałość" w ilości enterów między wierszami, 
+źle to wygląda jak raz enterów jest 2 a raz 4.
+6. Zawarcie zmiennej do pliku CSV w jakimś stringu w zewnętrznym pliku jest moim zdaniem dobrą praktyką.
+7. Nieużywane usingi w na górze, do usunięcia. Dodatkowo dobrą praktyką jest umieszczanie ich nad namespacem, na samej górze.
+8. Inicjowanie listy z gotowym obiektem jest wg. mnie zbędne.
+9. Umieszczenie zbędnego argumentu w sygnaturze funkcji.
+10. Brak zamknięcia pliku po skończeniu działania programu.
+11. Dawanie obok siebie 2 pętli for bez żadnego celu, można te pętle zmergować (te z przypisaniem wartosci).
+12. Uzywanie LINQ zamiast pętli w pętli, mniej kodu i większa czytelność
+13. Zazwyczaj, chociaż jest to moim zdaniem opcjonalne, warto tego typu funkcjonalności zawrzeć w klasie statycznej,
+żeby nie tworzyc nowych instancji tej klasy.
+14. Warto też pomyśleć o tym, by ImportedObjectBaseClass przerobić na interface, kod będzie łatwejszy do rozwoju,
+ja ją przerobiłem na klasę abstrakcyjną, ponieważ nie potrzebujemy tworzyc jej istancji.
+15. Uzycie ReadLine zamiast ReadKey, to drugie jest troche bardziej intuicyjne dla usera.
+16. Properties (get set) raz są po enterze a raz w jednej linii.
+17. Część osób mogłaby się też przyczepić o użycie rzutowania na obiekt klasy interfacu na listę bez dokładnej znajomości implementacji, ale w tym przypadku akurat działa.
+
+A teraz błędy niestylistyczne:
+1. Kod rzucający błędami na start.
+2. Podanie do programu złej nazwy pliku - wyjątek.
+3. Brak walidacji na wypadek pustej linii - wyjątek.
+4. Powtarzające się nazwy pól w klasach dziedziczących po sobie.
+5. Zmienna IsNullable ma zły typ danych, powinien być to bool.
+
+																	
